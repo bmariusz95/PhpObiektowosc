@@ -1,5 +1,13 @@
 <?php
-class Osoba {
+interface ZachowanieOsoby{
+    public function pobierzOpis();
+    public function zmienImie($noweImie);
+    
+
+
+
+}
+class Osoba implements ZachowanieOsoby {
     private $imie;
     private $wiek;
     private static $instancja=null;
